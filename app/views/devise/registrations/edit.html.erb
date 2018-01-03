@@ -41,6 +41,11 @@
     <%= f.select :sex, User.sexes.keys, autofocus: true, autocomplete: "sex" %>
   </div>
 
+  <div class="field">
+    <%= f.label :school %><br />
+    <%= f.text_field :school, autofocus: true, autocomplete: "school" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
